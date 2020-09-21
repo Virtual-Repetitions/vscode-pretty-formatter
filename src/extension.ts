@@ -41,6 +41,7 @@ const selectors = [
     'aspx', //ASP Inline Expression
     'cfm', //CFML (ColdFusion Markup Language)
     'dust', //Dust.js
+    'html-eex',//EEX Elixir Templates
     'eex', //EEX Elixir Templates
     'ejs', //EJS (Embedded JavaScript) Templates
     'erb', //ERB (Embedded Ruby)

@@ -74,6 +74,14 @@
                     "default": [],
                     "description": "A list of languages IDs to disable this extension on"
                 },
+                "pretty-formatter.enableLanguages": {
+                    "type": "array",
+                    "items": {
+                        "type": "string"
+                    },
+                    "default": [],
+                    "description": "A list of languages IDs to enable this extension on. Setting this will cause the disableLanguages option to be ignored."
+                },
                 "pretty-formatter.braceLine": {
                     "type": "boolean",
                     "default": false,

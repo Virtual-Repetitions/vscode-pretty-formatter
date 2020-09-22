@@ -148,9 +148,15 @@ export function activate(context: ExtensionContext) {
         languageSelector: DocumentSelector;
     }
 
-    const enabledLanguages = selectors.filter(function (el) {
-        return config.disableLanguages.indexOf(el) < 0;
-    });
+    let enabledLanguages: string[] = [];
+    if (config.enableLanguages.length > 0) {
+        enabledLanguages = config.enableLanguages;
+    } else {
+        enabledLanguages = selectors.filter(function (el) {
+            return config.disableLanguages.indexOf(el) < 0;
+        });
+    }
+    
 
     function registerFormatter() {
         disposeHandlers();

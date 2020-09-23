@@ -61,6 +61,24 @@
       "type": "object",
       "title": "Pretty Formatter",
       "properties": {
+        "pretty-formatter.config": {
+          "type": "string",
+          "default": "none",
+          "description": "This option allows a user to specify any .prettydiffrc file at any location in the local file system for configuration settings. A value of 'none' tells the application to bypass reading any configuration file."
+        },
+        "pretty-formatter.formatting": {
+          "type": "boolean",
+          "default": true,
+          "description": "Whether to enable formatting."
+        },
+        "pretty-formatter.disableLanguages": {
+          "type": "array",
+          "items": {
+            "type": "string"
+          },
+          "default": [],
+          "description": "A list of languages IDs to disable this extension on"
+        },
         "pretty-formatter.enableLanguages": {
           "type": "array",
           "items": {
